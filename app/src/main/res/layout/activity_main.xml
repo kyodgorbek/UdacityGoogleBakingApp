@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="horizontal"
-    tools:context="com.example.yodgorbekkomilov.bakingapp.MainActivity">
+    tools:context="com.edgar.yodgorbekkomilov.yodgorbekkomilov.MainActivity">
 
 
 

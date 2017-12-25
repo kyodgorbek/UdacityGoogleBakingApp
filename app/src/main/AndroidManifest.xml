@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.yodgorbekkomilov.bakingapp">
+    package="com.edgar.yodgorbekkomilov.yodgorbekkomilov">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.edgar.yodgorbekkomilov.yodgorbekkomilov.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,21 +20,21 @@
         </activity>
 
 
-        <activity android:name=".DetailActivity"/>
+        <activity android:name="com.edgar.yodgorbekkomilov.yodgorbekkomilov.DetailActivity"/>
 
-        <activity android:name=".ReceiptActivity"
+        <activity android:name="com.edgar.yodgorbekkomilov.yodgorbekkomilov.ReceiptActivity"
             android:theme="@style/AppTheme"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName="com.edgar.yodgorbekkomilov.yodgorbekkomilov.MainActivity"/>
 
         <!-- recipe provider -->
 
         <provider
-            android:name=".ContentProvider.RecipeProvider"
-            android:authorities="com.example.yodgorbekkomilov.bakingapp"
+            android:name="com.edgar.yodgorbekkomilov.yodgorbekkomilov.ContentProvider.RecipeProvider"
+            android:authorities="com.edgar.yodgorbekkomilov.yodgorbekkomilov"
             android:exported="true" />
 
 
-        <receiver android:name=".widget.RecipeWidgetProvider">
+        <receiver android:name="com.edgar.yodgorbekkomilov.yodgorbekkomilov.widget.RecipeWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <action android:name="android.appwidget.action.MY_WIDGET_UPDATE" />
@@ -51,7 +51,7 @@
 
 
         <service
-            android:name=".widget.WidgetService"
+            android:name="com.edgar.yodgorbekkomilov.yodgorbekkomilov.widget.WidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
     </application>
 
