@@ -1,0 +1,20 @@
+Index: app/src/main/res/layout/activity_detail.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_detail.xml	(revision )
++++ app/src/main/res/layout/activity_detail.xml	(revision )
+@@ -0,0 +1,11 @@
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:orientation="vertical">
++
++    <FrameLayout
++        android:id="@+id/detailContainer"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"></FrameLayout>
++
++</LinearLayout>
+\ No newline at end of file
